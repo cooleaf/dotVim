@@ -1,0 +1,166 @@
+! urxvt configuration{{{
+! General{{{
+!urxvt*termName                : rxvt-256color
+urxvt*loginShell               : true
+urxvt*secondaryScroll          : true
+URxvt.cursorBlink              : True
+urxvt*saveLines                : 65535
+urxvt*urgentOnBell             : true
+urxvt*preeditType              : Root
+urxvt*inputMethod              : fcitx
+URxvt.borderLess               : False
+!urxvt*override-redirect       : false
+!urxvt*borderLess              : false
+!urxvt*internalBorder          : 0
+!urxvt*externalBorder          : 0
+!}}}
+! Extensions{{{
+urxvt*perl-lib                 : /usr/lib/urxvt/perl/
+urxvt*perl-ext-common          : default,matcher,searchable-scrollback
+urxvt*urlLauncher              : firefox
+urxvt*matcher.button           : 1
+!  - catch ugly URLs
+!}}}
+! Appearance{{{
+!  - font{{{
+!  - use xft for drawing fonts
+Xft.dpi                        : 96
+!URxvt.font                    : xft                                   : Yahei Mono for Powerline : size=9  : antialias=true
+!URxvt.boldfont                : xft                                   : Yahei Mono for Powerline : size=9  : antialias=true
+URxvt*font                     : xft:DejaVu Sans Mono for Powerline:size=12:antialias=true
+!URxvt*boldfont                 : xft:WenQuanYi Zen Hei Mono:bold:size=12:antialias=true
+!URxvt*imFont                   : xft:consolas:regular:size=10
+!URxvt*boldFont                 : xft:consolas:bold:size=10
+!URxvt*italicFont               : xft:consolas:italic:size=10
+!URxvt*boldItalicFont           : xft:consolas:bold:italic: size=10
+!}}}
+!  - cursor{{{
+!urxvt*cursorColor              : #DCDCCC
+!}}}
+!  - pseudo transparency{{{
+urxvt*shading                 : 15
+urxvt*transparent             : false
+!
+!}}}
+!  - color scheme{{{
+!!Source http://github.com/altercation/solarized
+ 
+!urxvt*background: #002b36
+!urxvt*foreground: #657b83
+!!!*fading: 40
+!urxvt*fadeColor: #002b36
+!urxvt*cursorColor: #93a1a1
+!urxvt*pointerColorBackground: #586e75
+!urxvt*pointerColorForeground: #93a1a1
+ 
+!!! black dark/light
+!urxvt*color0: #073642
+!urxvt*color8: #002b36
+ 
+!!! red dark/light
+!urxvt*color1: #dc322f
+!urxvt*color9: #cb4b16
+ 
+!!! green dark/light
+!urxvt*color2: #859900
+!urxvt*color10: #586e75
+ 
+!!! yellow dark/light
+!urxvt*color3: #b58900
+!urxvt*color11: #657b83
+ 
+!!! blue dark/light
+!urxvt*color4: #268bd2
+!urxvt*color12: #839496
+ 
+!!! magenta dark/light
+!urxvt*color5: #d33682
+!urxvt*color13: #6c71c4
+ 
+!!! cyan dark/light
+!urxvt*color6: #2aa198
+!urxvt*color14: #93a1a1
+ 
+!!! white dark/light
+!urxvt*color7: #eee8d5
+!urxvt*color15: #fdf6e3
+
+urxvt*background:[80]#171717
+urxvt*foreground:#FFFFCC
+urxvt*cursorColor:#2267b5
+urxvt*colorbd:#FFFFCC
+
+
+! blacks (dark,light)
+urxvt*color0:#393939
+urxvt*color8:#595959
+
+! reds
+urxvt*color1:#be2422
+urxvt*color9:#be2422
+
+! greens
+urxvt*color2:#228c4a
+urxvt*color10:#228c4a
+
+! yellows
+urxvt*color3:#8c7f22
+urxvt*color11:#8c7f22
+
+! blues
+urxvt*color4:#2267a5
+urxvt*color12:#2267a5
+
+! magentas
+urxvt*color5:#8a65aa
+urxvt*color13:#8a65aa
+
+! cyans
+urxvt*color6:#2267a5
+urxvt*color14:#2267a5
+
+! whites
+urxvt*color7:#C8B55B
+urxvt*color15:#E4DC8C
+!}}}
+!  - scrollBar{{{
+urxvt*scrollBar                : true
+URxvt.scrollBar_right          : true
+URxvt.scrollBar_floating       : false
+URxvt.scrollstyle              : plain
+URxvt.mouseWheelScrollPage     : false
+URxvt.scrollTtyOutput          : false
+URxvt.scrollWithBuffer         : true
+URxvt.scrollTtyKeypress        : true
+!}}}
+!}}}
+!}}}
+! xterm configuration{{{
+XTerm*termName:  xterm-256color
+XTerm*locale                     : true
+XTerm*utf8Title                  : true
+XTerm*fontMenu*fontdefault*Label : Default
+XTerm*faceName                   : DejaVu Sans Mono for Powerline                      : antialias=True : pixelsize=15
+!XTerm*faceName                   : Ubuntu Mono derivative Powerline                     : antialias=True : pixelsize=15
+XTerm*faceNameDoublesize         : WenQuanYi Zen Hei Mono                              : pixelsize=15
+XTerm*faceSize                   : 10
+XTerm*faceSize1                  : 10
+XTerm*faceSize2                  : 10
+XTerm*faceSize3                  : 10
+XTerm*faceSize4                  : 10
+XTerm*faceSize5                  : 10
+XTerm*faceSize6                  : 10
+XTerm*cjkWidth                   : false
+XTerm*background                 : black
+XTerm*foreground                 : gray
+XTerm*scrollBar                  : true
+XTerm*rightScrollBar             : true
+XTerm*jumpScroll                 : true
+XTerm*SaveLines                  : 3000
+XTerm*loginshell                 : true
+XTerm*cursorBlink                : true
+XTerm*colorUL                    : yellow
+XTerm*colorBD                    : white
+Xterm*eightBitInput              : false
+Xterm*altSendsEscape             : true
+!}}}

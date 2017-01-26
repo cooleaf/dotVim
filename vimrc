@@ -55,6 +55,7 @@ set guioptions-=m " Menubar
 set guioptions-=L " hide left scroll
 set guioptions-=b " hide bottom scroll
 set showtabline=0 " hide tab
+set lines=80
 "}}}
 " Behaviors {{{
 " ---------------
@@ -110,8 +111,9 @@ highlight SpecialKey guifg=#444444 guibg=NONE gui=NONE ctermfg=238 ctermbg=NONE 
 "}}}
 " Sounds {{{
 " ---------------
-set noerrorbells visualbell t_vb=
-autocmd GUIEnter * set visualbell t_vb=
+set noerrorbells
+set novisualbell
+set t_vb=
 "}}}
 " Mouse {{{
 " ---------------
@@ -332,7 +334,6 @@ Plug 'Valloric/YouCompleteMe'
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_show_diagnostics_ui = 0
-set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
 "autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
 " }}}
