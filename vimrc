@@ -290,7 +290,7 @@ try
 catch /^Vim\%((\a\+)\)\=:E185/
     colorscheme desert
 endtry
-" }}}
+"}}}
 " Airline {{{
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -329,14 +329,14 @@ Plug 'scrooloose/nerdcommenter'
 " Signify {{{
 Plug 'mhinz/vim-signify'
 " }}}
-" YouCompleteMe {{{
-Plug 'Valloric/YouCompleteMe'
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_show_diagnostics_ui = 0
-let g:ycm_add_preview_to_completeopt = 0
-"autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
-" }}}
+" " YouCompleteMe {{{
+" Plug 'Valloric/YouCompleteMe'
+" let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+" let g:ycm_confirm_extra_conf = 0
+" let g:ycm_show_diagnostics_ui = 0
+" let g:ycm_add_preview_to_completeopt = 0
+" "autocmd FileType c nnoremap <buffer> <silent> <C-]> :YcmCompleter GoTo<cr>
+" " }}}
 " Color_coded {{{
 if has("gui_running")
     Plug 'jeaye/color_coded'
